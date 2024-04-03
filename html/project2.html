@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="../css/projects.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1 styl={}>My <span>Project</span></h1>
+    </header>
+    <main>
+        <section id="description">
+            <div class="descriptioncontainer" id="descriptioncontainer">
+                <div class="descriptiontext" id="descriptiontext">
+                  <h2>Project <span>Description</span></h2>
+                  <p>The project combines OCR and web crawling to verify result card
+                     authenticity. Users upload result card images, which are processed 
+                     by OCR to extract specific details. Based on the board name, the system
+                     navigates to the respective board's website and automatically fills student data.
+                     The retrieved result card is compared with the original image data to determine if it
+                     's authentic or tampered with, providing a reliable verification process.
+
+
+
+
+                 </p>
+                 <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=100005536278504&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/matiullah_niazi_12?igsh=MXU0d2RqYmcwMm5vNQ=="><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.linkedin.com/in/mati-ullah-khan-a2620b247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i></a>
+                </div>
+               </div>
+               <div class="overlaycontainer">
+                  <div class="beautifuloverlay" id="beautifuloverlay">
+                     <div class="inneroverlay"></div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="requirement" id="requirement">
+            <h2 class="heading">Project <span>Requirements</span></h2>
+            <div class="requirement-row">
+                <div class="requirement-column">
+                    <h2 class="title">Functional Requirements</h2>
+                    <div class="requirement-box">
+                        <div class="requirement-content">
+                            <div class="content">
+                                <h3>Image Upload: </h3>
+                                <p>The user should be able to upload the image that would be latter verified</p>
+                            </div>
+                        </div>
+                        <div class="requirement-content">
+                            <div class="content">
+                                <h3>OCR Integration: </h3>
+                                <p> The system must integrate with an OCR engine to extract specific information (such as roll number, year, board name) from the uploaded images.</p>
+                            </div>
+                        </div>
+                        <div class="requirement-content">
+                            <div class="content">
+                                <h3>Web Scraping: </h3>
+                                <p>The application should be able to scrape data from specific board websites to retrieve result cards.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="requirement-content">
+                            <div class="content">
+                                <h3>Automatic Form Filling:</h3>
+                                <p>It must automatically fill student data on the board's website based on the extracted information.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="requirement-content">
+                            <div class="content">
+        
+                                <h3>Comparison System:</h3>
+                                <p> The system should compare the extracted result card data with the original image data to verify authenticity.
+                            </div>
+                        </div>
+                        <div class="requirement-content">
+                            <div class="content">
+        
+                                <h3>Result Message Generation:</h3>
+                                <p>Based on the comparison, the system must generate and display a message indicating whether the result card is original or tampered with.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="requirement-column">
+                    <h2 class="title">Non Functional Requirements</h2>
+                    <div class="requirement-box">
+                        <div class="requirement-content">
+                            <div class="content">
+                                <h3>Security:</h3>
+                                <p>Secure user authentication and authorization mechanisms to protect sensitive data<br>
+                                    Regular security audits and updates to ensure system security.</p>
+                            </div>
+                        </div>
+                        <div class="requirement-content">
+                            <div class="content">
+                                <h3>Performance:</h3>
+                                <p>Fast loading times for both customer and admin interfaces.<br>
+                                    Efficient database queries and caching mechanisms to improve performance.</p>
+                            </div>
+                        </div>
+                        <div class="requirement-content">
+                            <div class="content">
+                                <h3>Scalability:</h3>
+                                <p>Ability to handle a growing number of users, cars, and bookings without performance degradation.<br>
+                                    Scalable database architecture to accommodate increasing data.</p>
+                            </div>
+                        </div>
+                        <div class="requirement-content">
+                            <div class="content">
+                                <h3>Reliability:</h3>
+                                <p>Ensure system uptime and availability for users and admins.<br>
+                                Implement backup and recovery mechanisms to prevent data loss.</p>
+                            </div>
+                        </div>
+                        <div class="requirement-content">
+                            <div class="content">
+                                <h3>Compatibility:</h3>
+                                <p>Support for multiple browsers and devices (desktop, mobile, tablet).<br>
+                                    Ensure cross-browser compatibility and responsive design for a consistent user experience.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Documentation</h3>
+                                <p>Comprehensive documentation for users and administrators on how to use the system.<br>
+                                    Code documentation for developers to understand and maintain the system effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="SoftwareModel" class="softwareModel">
+          <h2 class="heading">Software <span>Model</span></h2>
+           <div class="modelcontainer" id="modelcontainer">
+             
+              <div class="modeltext" id="modeltext">
+                <div class="innertext">
+                    <div class="content">
+                        <div class="innercontent">
+                 <h2>Sequential Model</h2>
+                <p>
+                    The development process for your project followed a sequential model.
+                    It began with creating the user interface, allowing users to interact 
+                    with the application. Next, you integrated OCR functionality to extract 
+                    text from uploaded images. Following this, you developed a web scraper to
+                     gather data from specific websites. Finally, you implemented a comparison
+                      system to verify the authenticity of result cards by comparing extracted
+                       data with the original image data. 
+                    This step-by-step approach ensured a structured and organized development process.
+                </p>
+            </div>
+                     </div>
+            </div>
+              </div>
+              <div class="modeloverlay">
+                <div class="ineroverlay">
+                    <div class="thinoverlay">
+                        <img src="../images/cars.png">
+
+                    </div>
+                </div>
+              </div>
+          </div>
+            
+        </section>
+        <section class="screenshots" id="screenshots">
+            <h4 class="heading">Modules <span>ScreenShots</span></h4>
+            <div class="screenshots-container">
+                <div class="screenshots-box">
+                    <img src="../project2images/Screenshot (40).png" alt="">
+                </div>
+                <div class="screenshots-box">
+                    <img src="../project2images/Screenshot (39).png" alt="">
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--both section are similar in design but only changes the content with videos-->
+    <section class="videos" id="videos">
+        <h4 class="heading">Modules  <span> Videos</span></h4>
+        <div class="videos-container">
+            <div class="videos-box">
+                <video  controls>
+                    <source src="../project2videos/perfect1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="videos-box">
+                <video  controls>
+                    <source src="../project2videos/perfect.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+        </div>
+    </section>
+    <section class="tools" id="tools">
+        <h2 class="heading">Projects <span>Tools&&Tech</span></h2>
+        <div class="tools-row">
+            <div class="tools-column">
+                <h2 class="title">Languages</h2>
+                <div class="tools-box">
+                    <div class="tools-content">
+                        <div class="content">
+                            <div class="year" style="color:#F7DF1E"><i class="bx bxl-javascript"></i></div>
+                            <h3>JavaScript(JS)</h3>
+                            <p>The Language that we have used in that project is ReactJs. I have done all the moules with that Language
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tools-content">
+                        <div class="content">
+                            <div class="year" style="color:#FFFFFF"><i class="bx bxl-html5"></i></div>
+                            <h3>HyperTextLanguage</h3>
+                            <p>We have used the Html Tags for  that project components </p>
+                        </div>
+                    </div>
+                    <div class="tools-content">
+                        <div class="content">
+                            <div class="year"style="color:#1572B6"><i class="bx bxl-css3"></i></div>
+                            <h3>Cascade Styling Sheet(css)</h3>
+                            <p>We have used the css  to design the different component with the help of the bootstrap</p>
+                        </div>
+                    </div>
+                    <div class="tools-content">
+                        <div class="content">
+                            <div class="year" style="color:#3FA037"><i class="bx bxs-calendar"></i></div>
+                            <h3>Node Js</h3>
+                            <p>For Backend we have used the Nodejs. We have used the different nodejs libraries</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tools-column">
+                <h2 class="title">Tools&&Tech</h2>
+                <div class="tools-box">
+                    <div class="tools-content">
+                        <div class="content">
+                            <div class="year" style="color: #61DAFB;"><i class="bx bxl-react"></i></div>
+                            <h3>ReactJs</h3>
+                            <p>The frame work that we have used in that project is ReactJs. I have done my all work with the help of 
+                                class based functions </p>
+                        </div>
+                    </div>
+                    <div class="tools-content">
+                        <div class="content">
+                            <div class="year"style="color:#68A063"><i class="bx bxl-nodejs"></i></div>
+                            <h3>NodeJs</h3>
+                            <p>For the backend purpose and the for the server side code i have used the Nodejs and NodeJs libraries</p>
+                        </div>
+                    </div>
+                    <div class="tools-content">
+                        <div class="content">
+                            <div class="year" style="color: #3FA037"><i class="bx bxl-mongodb"></i></div>
+                            <h3>MongoDB</h3>
+                            <p>My Whole project is totally based on the database and i have used the MongoDb for that purpose.
+                                I have used MongoCloud for that purpose.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tools-content">
+                        <div class="content">
+                            <div class="year" ><i class="bx bxs-calendar"></i></div>
+                            <h3>Express Js</h3>
+                            <p>For Backend I have used the Express different libraries. like axios etc.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Matiullah Khan Niazi | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#description"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+</body>
+</html>
